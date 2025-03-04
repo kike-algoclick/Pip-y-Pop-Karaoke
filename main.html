@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Karaoke Pip & Pop</title>
 </head>
 <body>
-    
+    <h1>Bienvenidos al Karaole Pip & Pop</h1>
+
+    <!--Formulario para agregar canciones-->
+    <form id="song_form">
+        <label for="song_name">Nombre de la canción</label><br>
+        <input id="song_name" type="text"  required><br>
+
+        <label for="artist_name">Nombre del Artista</label><br>
+        <input id="artist_name" type="text" required><br>
+
+        <label for="url_song">Ingresa el Enlace de la canción</label><br>
+        <input id="url_song" type="url" required><br><br>
+
+        <button type="submit">Agregar a la Lista</button>
+    </form>
+
+    <!--Lista de canciones-->
+    <h1>Lista de reproducción</h1>
+    <ul id="playlist"></ul>
 </body>
 </html>
