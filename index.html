@@ -11,11 +11,11 @@
     <h1 class="mt-15 w-90 border-1 border-blue-400 text-dark mb-2 text-2xl font- dark:text-black">Bienvenidos al Karaoke Pip & Pop</h1>
     </div>
     <div class="flex gap-40">
-    <img class="rounded-md" src="https://th.bing.com/th/id/OIP.Wis3WTlo3x7nqcer-ohUqwHaGo?w=200&h=180&c=7&r=0&o=5&pid=1.7" alt="Pip & Pop">
+    <img class="rounded-md m-5 ml-40 w-100" src="https://th.bing.com/th/id/OIP.Wis3WTlo3x7nqcer-ohUqwHaGo?w=200&h=180&c=7&r=0&o=5&pid=1.7" alt="Pip & Pop">
     <!--Formulario para agregar canciones-->
     
-    <section class="flex justify-center border-1 border-black w-400">
-    <form class="w-100 " id="song_form  ">
+    <section class="flex justify-center size-100 border-1 border-black">
+    <form class="mt-20" id="song_form">
         <label for="song_name">Nombre de la canción</label><br>
         <input class="rounded-md border-solid border-2 border-blue-400" id="song_name" type="text"  required><br>
 
@@ -25,16 +25,17 @@
         <label for="url_song">Ingresa el Enlace de la canción</label><br>
         <input class="rounded-md border-solid border-2 border-blue-400" id="url_song" type="url" required><br><br>
 
-        <button class=" p-2 rounded-md bg-blue-500" type="submit" c>Agregar a la Lista</button>
+        <button class="p-3 rounded-md bg-blue-500" type="submit" c>Agregar a la Lista</button>
     </form>
 </section>
 </div>
+<br>
     <!--Lista de canciones-->
-    <div class="flex justify-center">
-    <h1>Lista de reproducción</h1>
-    <ul id="play_list"></ul>
+<div class="flex justify-center ">
+    <h1 class="flex justify-center w-100 border-1 border-black bg-white rounded-md">Lista de reproducción</h1>
+   <br> <ul class="flex justify-center bg-white w-100" id="play_list"></ul>
+</div>
 
-    </div>
-    <script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
