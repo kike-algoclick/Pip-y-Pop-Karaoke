@@ -5,6 +5,7 @@ const playList = document.getElementById('play_list');
 //función para agregar una cancion a la lista
 function addSong(songName, artistName, songUrl){
     const listSong = document.createElement('li');
+    listSong.setAttribute('class','')
     listSong.innerHTML = `
     <strong>${songName}</strong>
     -${artistName}
@@ -17,13 +18,13 @@ function addSong(songName, artistName, songUrl){
     
     const deleteButton = listSong.querySelector('.delete-btn')
     deleteButton.addEventListener('click', ()=>{
-        playList.remove(listSong)
-    })
+        playList.removeChild(listSong)
+    });
 
 }
 
 //Manejo de envio de formulario (Eventos);
-songForm.addEventListener('submit', (event)=>{
+songForm.addEventListener('submit',(event)=>{
     event.preventDefault();
 
     //obtener datos del formulario
