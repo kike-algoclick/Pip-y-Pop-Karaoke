@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karaoke Pip & Pop</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <h1>Bienvenidos al Karaole Pip & Pop</h1>
-
+    <div class="flex justify-center">
+    <h1 class=" w-60 border-1 border-blue-400 text-dark mb-2 text-2xl font-semibold dark:text-black">Bienvenidos al Karaoke Pip & Pop</h1>
+    </div>
     <!--Formulario para agregar canciones-->
-    <form id="song_form">
+    <section class="flex justify-content">
+    <form class="w-100 " id="song_form">
         <label for="song_name">Nombre de la canción</label>
-        <input id="song_name" type="text"  required>
+        <input class="rounded-md border-solid border-2 border-yellow-400" id="song_name" type="text"  required>
 
         <label for="artist_name">Nombre del Artista</label>
         <input id="artist_name" type="text" required>
@@ -21,7 +24,7 @@
 
         <button type="submit" c>Agregar a la Lista</button>
     </form>
-
+</section>
     <!--Lista de canciones-->
     <h1>Lista de reproducción</h1>
     <ul id="play_list"></ul>
