@@ -8,12 +8,11 @@ const playList = document.getElementById('play_list');
 
 function addSong(songName, artistName, songUrl) {
     const listSong = document.createElement('li');
-    listSong.setAttribute('class', 'flex item-center justify-center bg-purple-500 p-5 rounded-md ')
+    listSong.setAttribute('class', 'bg-purple-500 p-5 rounded-md w-full')
     listSong.innerHTML = `
-            <strong> ${songName} </strong> 
-            - ${artistName} 
+            <strong> ${songName} </strong> - ${artistName} 
             <a class=" text-blue-700 hover:underline ml-3 mr-3" href="${songUrl}" target="_blank" >Reproducir</a>
-            <button class="delete-btn bg-red-500 p-1 rounded-sm shadow-lg shadow-red-400/40 flex justify-center" >Eliminar</button> 
+            <button class="delete-btn p-1 bg-red-500 rounded-sm shadow-lg shadow-red-400/40" >Eliminar</button> 
     `;
     //Agregar al html
     playList.appendChild(listSong);
